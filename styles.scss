@@ -102,9 +102,18 @@ p {
     border-left: dashed #444 2px;
 }
 
+.subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.spacer {
+    height: 3rem;
+}
+
 .s1 {
     z-index: 1;
-
+    
     margin: 0;
     width: 100vw;
     padding: 3vw;
@@ -115,24 +124,24 @@ p {
 #screen {
     z-index: -1;
     background: rgba(0, 0, 0, 0.3);
-
+    
     position: fixed;
     height: 100vh;
     width: 100vw;
-
+    
     backdrop-filter: blur(100px);
-
+    
     animation: screen-open 2.4s ease-in;
 }
 
 .blobs {
     z-index: 0;
-
+    
     #blob1 {
         z-index: -2;
         filter: blur(100px);
         overflow: hidden;
-
+        
         position: fixed;
         height: 20rem;
         width: 20rem;
@@ -140,15 +149,15 @@ p {
         left: calc(50vw - 10rem - 30vw);
         background: $blob1;
         border-radius: 100%;
-
+        
         animation: moveupdown infinite 5s ease 0ms;
     }
-
+    
     #blob2 {
         z-index: -2;
         filter: blur(100px);
         overflow: hidden;
-
+        
         position: fixed;
         height: 20rem;
         width: 20rem;
@@ -156,7 +165,7 @@ p {
         left: calc(50vw - 10rem);
         background: $blob2;
         border-radius: 100%;
-
+        
         animation: moveupdown infinite 5s ease 300ms;
     }
 

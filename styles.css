@@ -79,6 +79,15 @@ p .accent {
   border-left: dashed #444 2px;
 }
 
+.subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.spacer {
+  height: 3rem;
+}
+
 .s1 {
   z-index: 1;
   margin: 0;
